@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <script defer src="js/script.js"></script>
     <title>GO GO Pizza - Заказать лучшую пиццу в городе</title>
 </head>
 <body>
@@ -15,7 +11,7 @@
         <div class="container header__inner">
             <img class="header__logo" src="icon/logo-black.svg" alt="logo go go pizza">
             <button class="header__cart" aria-label="Открыть корзину">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.2447 19.9998L4.10025 20C3.52015 19.9993 3.02891 19.607 3.00305 18.9351L3.00023 
                             5.9415C3.00035 5.86538 2.99612 5.78464 3.01939 5.71195L3.02658 5.69123C3.17289 5.25439 
                             3.43005 5.20004 3.79803 5.19899L6.58683 5.20079C6.68626 5.20099 6.74251 5.24705 6.74251 
@@ -30,7 +26,7 @@
                             5.19908L11.5594 5.19929L11.5591 3.5658C11.5564 2.53906 10.8239 1.76759 9.86623 1.83416ZM7.38448 
                             7.52671C6.04227 7.64434 6.15332 9.73801 7.49949 9.70933C8.8618 9.52717 8.61172 7.4295 7.38448 
                             7.52671ZM12.5264 7.53972C11.1809 7.69444 11.3167 9.74163 12.6578 9.70762C13.9735 9.53388 13.8602 
-                            7.45702 12.5264 7.53972Z" fill="#2C2826"/>
+                            7.45702 12.5264 7.53972Z"/>
                 </svg>     
             </button>
         </div>
@@ -38,76 +34,73 @@
 
     <main class="main">
         <section class="hero">
-            <div class="container">
-                <h1 class="hero__title">Лучшая пицца в&nbsp;городе</h1>
-                <p class="hero__tegline">Доставим менее чем за&nbsp;час</p>
-                <button class="hero__order">Заказать</button>
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title">Лучшая пицца в&nbsp;городе</h1>
+                    <p class="hero__tegline">Доставим менее чем за&nbsp;час</p>
+                    <button class="hero__order">Заказать</button>
+                </div>
             </div>
         </section>
 
         <section class="toppings">
             <div class="container">
                 <h2 class="toppings__title">Выбрать топпинг:</h2>
+
+                <button class="toppings__button">
+                    <span>Выбрать топпинг</span>
+                    <svg class="toppings__arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 15.5L15.1962 6.5H4.80385L10 15.5Z" fill="#2C2826"/>
+                    </svg>
+                </button>
                 <ul class="toppings__list">
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Твердый сыр">Твердый сыр
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="1" name="topping" value="Твердый сыр">
+                        <label class="toppings__label" for="1">Твердый сыр</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Мацарелла">Мацарелла
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="2" name="topping" value="Мацарелла">
+                        <label class="toppings__label" for="2">Мацарелла</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Сыр с плесенью">Сыр с плесенью
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="3" name="topping" value="Сыр с плесенью">
+                        <label class="toppings__label" for="3">Сыр с плесенью</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Папперони">Папперони
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="4" name="topping" value="Пепперони">
+                        <label class="toppings__label" for="4">Пепперони</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Ветчина">Ветчина
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="5" name="topping" value="Ветчина">
+                        <label class="toppings__label" for="5">Ветчина</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Курица">Курица
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="6" name="topping" value="Курица">
+                        <label class="toppings__label" for="6">Курица</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Креветки">Креветки
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="7" name="topping" value="Креветки">
+                        <label class="toppings__label" for="7">Креветки</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Помидор">Помидор
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="8" name="topping" value="Помидор">
+                        <label class="toppings__label" for="8">Помидор</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Болгарский перец">Болгарский перец
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="9" name="topping" value="Болгарский перец">
+                        <label class="toppings__label" for="9">Болгарский перец</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Ананас">Ананас
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="10" name="topping" value="Ананас">
+                        <label class="toppings__label" for="10">Ананас</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Лук">Лук
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="11" name="topping" value="Лук">
+                        <label class="toppings__label" for="11">Лук</label>
                     </li>
                     <li class="toppings__item">
-                        <label class="toppings__label">
-                            <input class="toppings__checkbox" type="checkbox" name="Грибы">Грибы
-                        </label>
+                        <input class="toppings__checkbox" type="checkbox" id="12" name="topping" value="Грибы">
+                        <label class="toppings__label" for="12">Грибы</label>
                     </li>
                 </ul>
             </div>
@@ -119,122 +112,142 @@
                 <ul class="pizza__list">
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-margherita.jpg" alt="пицца маргарита">
-                            <h3 class="card__title">Маргарита</h3>
-                            <p class="card__info">
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
                                 <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-pepperoni.png" alt="пицца пеперони">
-                            <h3 class="card__title">Пеперони</h3>
-                            <p class="card__info">
-                                <span class="card__price">550 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-with-mushrooms.png" alt="пицца Морская">
-                            <h3 class="card__title">Морская</h3>
-                            <p class="card__info">
-                                <span class="card__price">590 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-only-cheese.png" alt="пицца Четыре сыра">
-                            <h3 class="card__title">Четыре сыра</h3>
-                            <p class="card__info">
-                                <span class="card__price">520 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-capricciosa.png" alt="пицца Капричиоза">
-                            <h3 class="card__title">Капричиоза</h3>
-                            <p class="card__info">
-                                <span class="card__price">530 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-with-shrimps.png" alt="пицца С грибами">
-                            <h3 class="card__title">С грибами</h3>
-                            <p class="card__info">
-                                <span class="card__price">490 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-with-bacon.png" alt="пицца с ветчиной">
-                            <h3 class="card__title">С ветчиной</h3>
-                            <p class="card__info">
-                                <span class="card__price">500 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-with-chicken-terriyaki.png" alt="пицца С курицей террияки">
-                            <h3 class="card__title">С курицей террияки</h3>
-                            <p class="card__info">
-                                <span class="card__price">560 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-hawaiana.png" alt="пицца Гавайская">
-                            <h3 class="card__title">Гавайская</h3>
-                            <p class="card__info">
-                                <span class="card__price">530 ₽</span>
-                                <span class="">/</span>
-                                <span class="card__weight">25 см</span>
-                            </p>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                    <span class="card__price">480 ₽</span>
+                                    <span class="">/</span>
+                                    <span class="card__weight">25 см</span>
+                                </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
                         <article class="pizza__card card">
-                            <img class="card__image" src="images/pizza/pizza-napoletana.png" alt="пицца маргарита">
-                            <h3 class="card__title">Неаполитана</h3>
-                            <p class="card__info">
-                                <span class="card__price">550 ₽</span>
+                            <img class="card__image" src="images/pizza/pizza-margherita.png" alt="пицца маргарита">
+                            <div class="card__content">
+                                <h3 class="card__title">Маргарита</h3>
+                                <p class="card__info">
+                                <span class="card__price">480 ₽</span>
                                 <span class="">/</span>
                                 <span class="card__weight">25 см</span>
                             </p>
                             <button class="card__button">Выбрать</button>
+                            </div>
                         </article>
                     </li>
                 </ul>
@@ -258,5 +271,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
