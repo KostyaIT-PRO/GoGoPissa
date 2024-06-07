@@ -1,5 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import "fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --white: #fff;
@@ -16,13 +16,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+html{
+    scroll-behavior: smooth;
+}
 body {
     position: relative;
     overflow-x: hidden;
     min-width: 320px;
     min-height: 100vh;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: var(--dark);
     background: var(--light);
@@ -323,10 +325,7 @@ fieldset {
 
 
 @media (width >= 540px){
-    .container{
-        --offset-container: 40px;
-    }
-
+    
     .header{
         top: 40px;
     }
@@ -340,6 +339,9 @@ fieldset {
 }
 
 @media(width >= 620px){
+    .container{
+        --offset-container: 40px;
+    }
     .hero{
         padding: 116px 0 90px;
         border-radius:0 0 32px 32px;
@@ -366,5 +368,131 @@ fieldset {
         bottom: -60px;
         right: calc(var(--offset-container) + 10px);
         
+    }
+
+    .toppings{
+        padding: 32px 0;
+    }
+    .toppings__button{
+        font-size: 24px;
+    }
+
+    .toppings__label{
+        font-size: 20px;
+    }
+
+
+    .pizza{
+        padding: 64px 0;
+    }
+    .pizza__title{
+        font-size: 44px;
+    }
+    .pizza__list{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+    }
+    /* .pizza__item{
+        
+    } */
+    /* .pizza__card{
+    
+    } */
+    .card{
+        padding-top: 46px;
+    }
+    .card__image{
+        width: 180px;
+    }
+    .card__content{
+        border-radius: 32px;
+        padding: 146px 24px 24px;
+    }
+    .card__title{
+        font-size: 24px;
+    }
+    .card__info{
+        font-size: 20px;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    
+    .card__button{
+        font-size: 20px;
+        padding: 8px 103px;
+    }
+}
+
+@media(width >= 860px){
+    .hero{
+        padding: 126px 0 80px;
+        margin-bottom: 82px;
+    }
+
+    .hero__content{
+        max-width: 544px;
+    }
+
+
+    .hero__inner::after{
+        bottom: -82px;
+        right: calc(var(--offset-container) + 10px);
+        max-width: 566px;
+        max-height: 499px;
+    }
+    .toppings__title{
+        position: static;
+        transform: none;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+    .toppings__button{
+        display: none;
+    }
+    .toppings__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-height: none;
+    }
+
+}
+
+
+
+
+
+@media(width >= 1140px){
+    .container{
+        --offset-container: 70px;
+    }
+    .hero{
+        padding: 140px 0 100px;
+        margin-bottom: 87px;
+    }
+
+    .hero__content{
+        max-width: 620px;
+    }
+
+    .hero__title{
+        font-size: 80px;
+    }
+    .hero__tegline{
+        margin-bottom: 64px;
+    }
+
+    .hero__inner::after{
+        bottom: -87px;
+        right: calc(var(--offset-container) + 30px);
+        max-width: 670px;
+        max-height: 591px;
+    }
+
+    .pizza__list{
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
     }
 }
