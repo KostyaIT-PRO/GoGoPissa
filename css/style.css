@@ -267,14 +267,19 @@ fieldset {
     gap: 12px;
 }
 .pizza__item{
-
+    display: flex;
+    flex-direction: column;
 }
-/* .pizza__card{
+.pizza__card{
+    flex-grow: 1;
+}
 
-} */
+
 .card{
     padding-top: 35px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .card__image{
     position: absolute;
@@ -284,12 +289,15 @@ fieldset {
     width: 80px;
 }
 .card__content{
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
     /* width: 140px;
     height: 158px; */
     background: var(--white);
     text-align: center;
     padding: 49px 8px 8px;
+    flex-grow: 1;
 }
 .card__title{
     font-weight: 600;
@@ -313,6 +321,7 @@ fieldset {
 
 } */
 .card__button{
+    display: block;
     width: 100%;
     font-size: 14px;
     color: var(--orange);
@@ -320,6 +329,7 @@ fieldset {
     background: var(--light);
     border-radius: 32px;
     box-sizing: border-box;
+    margin-top: auto;
 }
 
 
@@ -419,7 +429,7 @@ fieldset {
     
     .card__button{
         font-size: 20px;
-        padding: 8px 103px;
+        padding: 8px 90px;
     }
 }
 
